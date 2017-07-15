@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Login</ion-title>
+    <ion-title>Produce List</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,5 +13,7 @@
 
     </p>
 
-  <button ion-button icon-left block color="dark">Sign In</button>
+  <button ion-button icon-only block color="dark" (click)="addProduce()">
+    <ion-icon name="add-circle"></ion-icon>
+  </button>
 </ion-content>
