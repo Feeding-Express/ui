@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { LoginPage } from '../login/login';
+import { AddProducePage } from '../add-produce/add-produce';
 
 @Component({
   selector: 'page-produce-list',
@@ -11,6 +11,6 @@ export class ProduceList {
   constructor(public navCtrl: NavController) {}
 
   addProduce() {
-    this.navCtrl.push(LoginPage);
+    this.navCtrl.push(AddProducePage);
   }
 }
