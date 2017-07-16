@@ -1,6 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Add Produce</ion-title>
+    <ion-icon id="repeat" name="repeat"></ion-icon>
   </ion-navbar>
 </ion-header>
 
@@ -16,8 +17,29 @@
   </ion-item>
 
   <ion-item>
+    <ion-select>
+      <ion-option value="pkg"  selected="true">Pkg</ion-option>
+      <ion-option value="bin">Bin</ion-option>
+      <ion-option value="bag">Bag</ion-option>
+      <ion-option value="sack">Sack</ion-option>
+    </ion-select>
+   </ion-item>
+
+  <ion-item>
     <ion-label floating>Location</ion-label>
     <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-select>
+      <ion-option value="truck"  selected="true">Truck</ion-option>
+      <ion-option value="pallet">Pallet</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Load offered</ion-label>
+    <ion-input type="number"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -28,6 +50,16 @@
   <ion-item>
     <ion-label floating>Vendor Name</ion-label>
     <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Days</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Combo</ion-label>
+    <ion-input type="number"></ion-input>
   </ion-item>
 
   <ion-item>

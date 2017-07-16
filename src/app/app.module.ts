@@ -11,6 +11,9 @@ import { ProduceList } from '../pages/produce-list/produce-list';
 import { AddProducePage } from '../pages/add-produce/add-produce';
 import { ReceivedOrders } from '../pages/received-orders/received-orders';
 import { AddressBook } from '../pages/address-book/address-book';
+import { AddSendNotification } from '../pages/new-message/new-message';
+import { SuccessPage } from '../pages/message-success/message-success';
+import { ProduceAvailableList} from '../pages/produce-available-list/produce-available-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,6 +28,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProduceList,
     AddProducePage,
     ReceivedOrders,
+    AddSendNotification,
+    SuccessPage,
+    ProduceAvailableList,
     AddressBook
   ],
   imports: [
@@ -41,6 +47,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProduceList,
     AddProducePage,
     ReceivedOrders,
+    AddSendNotification,
+    ProduceAvailableList,
+    SuccessPage,
     AddressBook
   ],
   providers: [
