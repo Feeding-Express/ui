@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
 
@@ -8,9 +8,9 @@ import { LoginPage } from '../login/login';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {}
+  constructor(public appCtrl: App) {}
 
   openLogin() {
-    this.navCtrl.push(LoginPage);
+    this.appCtrl.getRootNav().setRoot(LoginPage);
   }
 }

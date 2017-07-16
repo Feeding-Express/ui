@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { App, NavController } from 'ionic-angular';
 
 import { SignUpPage } from '../signup/signup';
 import { ProduceList } from '../produce-list/produce-list';
@@ -10,10 +10,10 @@ import { ProduceList } from '../produce-list/produce-list';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public appCtrl: App, public navCtrl: NavController) {}
 
   signIn() {
-    this.navCtrl.push(ProduceList);
+    this.appCtrl.getRootNav().setRoot(ProduceList);
   }
 
   forgotPassword() {}

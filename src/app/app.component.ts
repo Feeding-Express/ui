@@ -4,12 +4,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/sample-list/list';
+import { ProduceList } from '../pages/produce-list/produce-list';
+import { ReceivedOrders } from '../pages/received-orders/received-orders';
+import { AddressBook } from '../pages/address-book/address-book';
 
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class FeedingExpress {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
@@ -19,12 +21,11 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
-    // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Produce List', component: ProduceList },
+      { title: 'Received Orders', component: ReceivedOrders },
+      { title: 'Address Book', component: AddressBook }
     ];
-
   }
 
   initializeApp() {
